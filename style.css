@@ -4,19 +4,15 @@
     --text: #e0def4;
 }
 
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-}
-
 html {
     scroll-behavior: smooth;
-    scroll-snap-stop: none;
+    scroll-snap-stop: always;
 }
 
 body {
     scale: 1.3;
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: var(--bg);
     color: var(--text);
     display: flex;
@@ -24,6 +20,7 @@ body {
     align-items: center;
     align-content: center;
     text-align: center;
+    transition-duration: 1s;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -47,8 +44,23 @@ a:visited {
 }
 
 footer {
-    margin-top: 80px;
+    height: 10vh;
     rotate: 0deg !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    transition-duration: 1s;
+    margin-top: 13vh;
+    rotate: 0deg !important;
+}
+
+footer a:hover,
+footer a:focus {
+    height: auto !important;
+    scale: 1.2;
 }
 
 a:hover,
@@ -79,17 +91,18 @@ h1 {
     background: var(--text-muted);
 }
 
-/* We love firefox. */
-@-moz-document url-prefix() {
-    body {
-        overflow-y: hidden;
-    }
-}
 @media (max-width: 1000px) {
-    html, body { overflow-x: hidden;}
 
-body {position: relative;}
-    body{
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    body {
         position: relative;
         overflow-x: hidden;
         scale: 1.1;
@@ -97,16 +110,20 @@ body {position: relative;}
         overflow-x: hidden;
         overflow-y: scroll !important;
     }
-    a{
+
+    a {
         overflow-x: hidden;
     }
-    a.large{
+
+    a.large {
         width: 100%;
     }
-    article{
+
+    article {
         width: 200vw;
     }
-    p{
+
+    p {
         font-size: 2rem;
     }
 }
