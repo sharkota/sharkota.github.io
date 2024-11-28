@@ -2,41 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta name="title" content="kota.is-a.dev" />
-    <meta name="description" content="Projects" />
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/assets/image/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="video">
-    <meta property="og:video:type" content="video/mp4">
-    <meta property="og:url"
-        content="https://cxssi87zgjjf.share.zrok.io/funnies/csgo/csgocats.mp4">
-    <meta property="og:video:url"
-        content="https://cxssi87zgjjf.share.zrok.io/funnies/csgo/csgocats.mp4">
-    <link href="style.css" rel="stylesheet">
-    <title>kota.is-a.dev</title>
+    <link rel="icon" href="/img/main/ico.png">
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="kota.is-a.dev"/>
+    <meta property="twitter:description" content="programmer & graphic designer"/>
+    <meta property="twitter:image" content="/img/main/banner.gif"/>
+    <title>Kota</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <article class="rotate">
-        <a class="large" href="https://github.com/sharkota/Hoverable-Discord-Theme">
-            <p>Hoverable-Discord-Theme</p>
-        </a>
-        <a class="large" href="https://sharkota.github.io/Awful-Project-Gen/">
-            <p>Awful-Project-Gen</p>
-        </a>
-        <a class="large" href="https://gist.github.com/sharkota/93b71e9ac37bde02882cdbc2ed39bf50">
-            <p>JS Gallery</p>
-        </a>
-        <a class="large" href="https://sharkota.github.io/Clean-Tab/">
-            <p>Clean-Tab</p>
-        </a>
-        <a id="selector" class="large" href="https://dakota.nekoweb.org">
-            <p>Fake Terminal</p>
-        </a>
-        <footer onmouseover="this.scrollIntoView();"><a href="https://github.com/sharkota">sharkota</a></footer>
-    </article>
-    <script src="visual.js"></script>
+    <main>
+        <section>
+            <h1>kota.is-a.dev</h1>
+            <h2>Web Developer</h2>
+            <nav>
+                <a href="/#about">About</a>
+                <a href="/#articles">Articles</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+            <group id="about">
+                <h2>About</h2>
+                <img class="profile" src="/img/main/dæmon.png">
+                <h3>Web Developer & Graphic Designer</h3>
+                <p>This site is a collection of projects, thoughts, and information about me.</p>
+                <p>I enjoy programming, nature, gloomy weather, music, reading, theology and video games.</p>
+                <h4>View my personal website <a href="https://koyo.neocities.org/" target="_blank">here</a>.</h4>
+                <h4>Need a website or coding tutor? <a href="mailto:dakotashi17@gmail.com">email me</a>.</h4>
+            </group>
+            <group id="articles">
+                <h2>Articles</h2>
+                <article>
+                    <h1>Thoughts - 2024-28-10</h1>
+                    <input type="checkbox" class="checkbox">
+                    <div class="hidden">
+                        <p>Currently there are no articles, please check again later.</p>
+                    </div>
+                </article>
+            </group>
+            <group id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <p><a href="https://dakota.nekoweb.org/" target="_blank">JS Terminal</a></p>
+                        <p>A fake terminal website, run <code>help</code> to see all functions.</p>
+                    </li>
+                    <li>
+                        <p><a href="https://koyo.neocities.org/" target="_blank">Koyo</a></p>
+                        <p>An ever changing artistic personal website.</p>
+                    </li>
+                    <li>
+                        <p><a href="#projects">Markitty</a></p>
+                        <p>A markdown ➡ HTML app, currently WIP.</p>
+                    </li>
+                </ul>
+            </group>
+            <group id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <p><a href="https://github.com/sharkota" target="_blank"><img class="icon"
+                                    src="/img/icon/github.png">Github</a>
+                        </p>
+                        <p><a href="https://neocities.org/site/koyo" target="_blank"><img class="icon"
+                                    src="/img/icon/neocities.png">Neocities</a></p>
+                        <p><a href="mailto:dakotashi17@gmail.com" target="_blank"><img class="icon"
+                                    src="/img/icon/mail.png">E-Mail</a>
+                        </p>
+                    </li>
+                </ul>
+            </group>
+            <footer>last updated: 24-28-10</footer>
+        </section>
+    </main>
+    <script>if (window.location.hash == '') { window.location.href = '/#about' }</script>
 </body>
 
 </html>
