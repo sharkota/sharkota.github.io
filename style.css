@@ -100,6 +100,10 @@ html{
             filter: drop-shadow(0px 0px 8px var(--highlight));
             background-color: var(--highlight);
         }
+
+        article{
+            width: 50%;
+        }
         
         #articles > article > div{
             transform: translateY(-4.5em);
@@ -131,9 +135,11 @@ html{
     @media only screen and (max-width: 900px) {
         body{
             overflow-y: scroll;
+            overflow-x: hidden;
             background-image: repeating-radial-gradient(var(--secondary), black 200%) !important;
             background-color: var(--primary);
             main{
+                overflow-x: hidden;
                 overflow-y: scroll;
                 footer{
                     display: inline-block;
@@ -162,6 +168,9 @@ html{
                     justify-content: center;
                 }
             }
+            article{
+                width: 100%;
+            }
             .profile{
                 display: none;
             }
@@ -175,8 +184,8 @@ html{
     background-color: var(--highlight);
 }
 /* evil */
-group { display: none; }
-group:target { display: block; }
+group { display: none;}
+group:target { display: flex; flex-direction: column; align-items: center; animation: fade-in forwards .2s;}
 /* checkboxes */
 .hidden {
     display: none;
@@ -192,4 +201,17 @@ group:target { display: block; }
 
 .checkbox:checked + .hidden {
     display: block;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%
+    }
 }
