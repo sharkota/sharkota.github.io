@@ -4,84 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/main/ico.png">
-    <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:title" content="kota.is-a.dev"/>
-    <meta property="twitter:description" content="programmer & graphic designer"/>
-    <meta property="twitter:image" content="/img/main/banner.gif"/>
-    <title>Kota</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/image/ico.png" type="image/x-icon">
+    <title>kota.is-a.dev</title>
+    <meta content="kota.is-a.dev" property="og:title">
+    <meta content="Dakota is a Full-Stack Developer offering freelance work for modern responsive websites."
+        property="og:description">
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/theme.css">
 </head>
 
 <body>
-    <main>
-        <section>
-            <h1>kota.is-a.dev</h1>
-            <h2>Web Developer</h2>
-            <nav>
-                <a href="/#about">About</a>
-                <a href="/#articles">Articles</a>
-                <a href="/#projects">Projects</a>
-                <a href="/#contact">Contact</a>
-            </nav>
-            <group id="about">
+    <nav>
+        <Ul>
+            <li>
+                <a href="/"><i class="nf nf-fa-home"></i></a>
+                <a href="/blog/"><i class="nf nf-fa-pen"></i></a>
+                <a href="/hire/"><i class="nf nf-fa-suitcase"></i></a>
+                <a href="/stack/"><i class="nf nf-oct-stack"></i></a>
+            </li>
+        </Ul>
+    </nav>
+    <section>
+        <article>
+            <header>
+                <h2>Dakota</h2>
+                <h3>Full-Stack Developer</h3>
+            </header>
+            <p><span class="ping"></span>Currently available for freelance work <i>and</i> job offers.</p>
+            <p>To learn more about my services, visit <a href="hire">my portfolio</a>.</p>
+            <p>If you are interested, please reach out to <a href="mailto:dakotashi17@gmail.com">this email.</a></p>
+        </article>
+        <article>
+            <header>
                 <h2>About</h2>
-                <img class="profile" src="/img/main/dæmon.png">
-                <article>
-                <h3>Web Developer & Graphic Designer</h3>
-                <p>This site is a collection of projects, thoughts, and information about me.</p>
-                <p>I enjoy programming, nature, gloomy weather, music, reading, theology and video games.</p>
-                </article>
-                <h4>View my personal website <a href="https://koyo.neocities.org/" target="_blank">here</a>.</h4>
-                <h4>Need a website or coding tutor? <a href="mailto:dakotashi17@gmail.com">email me</a>.</h4>
-            </group>
-            <group id="articles">
-                <h2>Articles</h2>
-                <p>Currently there are no articles, please check again later.</p>
-                <!-- <article>
-                    <h1>Thoughts - 2024-28-10</h1>
-                    <input type="checkbox" class="checkbox">
-                    <div class="hidden">
-                        <p>Currently there are no articles, please check again later.</p>
-                    </div>
-                </article> -->
-            </group>
-            <group id="projects">
+            </header>
+            <p>I began my journey in web development five years ago, learning about design and front-end programming.
+            </p>
+            <p>I have since expanded my knowledge of web development to front and backend, learning Node and database
+                libraries.</p>
+            <hr>
+            <p>Outside of web development, I study theology and history. My other hobbies consist of game development,
+                writing, and anything linux.
+            </p>
+        </article>
+        <article>
+            <header>
                 <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <p><a href="https://dakota.nekoweb.org/" target="_blank">JS Terminal</a></p>
-                        <p>A fake terminal website, run <code>help</code> to see all functions.</p>
-                    </li>
-                    <li>
-                        <p><a href="https://koyo.neocities.org/" target="_blank">Koyo</a></p>
-                        <p>An ever changing artistic personal website.</p>
-                    </li>
-                    <li>
-                        <p><a href="#projects">Markitty</a></p>
-                        <p>A markdown ➡ HTML app, currently WIP.</p>
-                    </li>
-                </ul>
-            </group>
-            <group id="contact">
-                <h2>Contact</h2>
-                <ul>
-                    <li>
-                        <p><a href="https://github.com/sharkota" target="_blank"><img class="icon"
-                                    src="/img/icon/github.png">Github</a>
-                        </p>
-                        <p><a href="https://neocities.org/site/koyo" target="_blank"><img class="icon"
-                                    src="/img/icon/neocities.png">Neocities</a></p>
-                        <p><a href="mailto:dakotashi17@gmail.com" target="_blank"><img class="icon"
-                                    src="/img/icon/mail.png">E-Mail</a>
-                        </p>
-                    </li>
-                </ul>
-            </group>
-            <footer>last updated: 24-18-12</footer>
-        </section>
-    </main>
-    <script>if (window.location.hash == '') { window.location.href = '/#about' }</script>
+            </header>
+            <a target="_blank" href="https://github.com/sharkota/markitty">
+                <card>
+                    <img
+                        src="https://opengraph.githubassets.com/425797ebef28782d4eba1500779a2aa38f473372c8d92d649c44171b8057af5c/sharkota/markitty">
+                    <div class="col">
+                        <h3>Markitty <i class="nf nf-oct-link_external" style="font-size: 80%;"></i></h3>
+                        <p>A Markdown ➡ HTML live-server + builder.</p>
+                    </div>
+                </card>
+            </a>
+                <card>
+                    <div class="col">
+                        <h3>Moshii</h3>
+                        <p>A work in progress chat application. Closed source for now, expect it finished in a few years.</p>
+                    </div>
+                </card>
+        </article>
+        <article>
+            <header>
+                <h2>Blog</h2>
+            </header>
+            <a href="/blog/workflow/">
+                <card class="blog">
+                    <div class="col">
+                        <h3><i class="nf nf-fa-pen" style="font-size: 80%;"></i> Workflow</h3>
+                    </div>
+                    <img src="/blog/workflow/thumb.png">
+                </card>
+            </a>
+        </article>
+    </section>
+    <script src="/assets/js/home.js"></script>
 </body>
 
 </html>
